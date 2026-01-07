@@ -1,0 +1,25 @@
+.goog-logo-link {
+ display:none !important;
+}
+
+/*select {*/
+/*  font-size: 16px;*/
+/*  border: 1px solid #cecece;*/
+/*  width: auto;*/
+/*  appearance: none;*/
+/*  -moz-appearance: none;*/
+/*  -webkit-appearance: none;*/
+/*  background: url(./img/select_arrow.png) no-repeat center right #fff;*/
+/*  padding: 8px 20px 8px 8px;*/
+/*  color: #363169;*/
+/*  border-radius: 4px;*/
+/*}*/
+
+.goog-te-gadget {
+ color: transparent !important;
+ /*display:none !important;*/
+}
+
+.goog-te-gadget .goog-te-combo {
+ color: black !important;
+}

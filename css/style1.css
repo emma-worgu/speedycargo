@@ -1,0 +1,191 @@
+/*-------------------------
+    Testimonial Area
+--------------------------*/
+
+.testimonial-area {
+    position: relative;
+    z-index: 0;
+}
+
+.testimonial-area.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*---------------------------
+    Request Form Quote
+---------------------------*/
+
+.request-area.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.request-area.bg-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(27, 26, 34, 0.7);
+}
+
+.request-area.bg-image-02 {
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.request-area.bg-image-02:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../07.html);
+}
+
+.request-area .left-content-area {
+    height: 100%;
+}
+
+.request-area .left-content-area .request-img {
+    height: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.request-page-form-wrap {
+    background-color: #352d66;
+    padding: 120px 60px 104px;
+    position: relative;
+    z-index: 2;
+}
+
+.request-page-form-wrap.style-01 {
+    padding: 52px 50px 44px;
+    margin-right: 98px;
+}
+
+.request-page-form-wrap.style-02 {
+    padding: 52px 50px 44px;
+}
+
+.request-page-form-wrap.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -500px;
+    width: 1000px;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../02.html);
+    background-color: var(--main-color-one);
+}
+
+.request-page-form-wrap .section-title .title {
+    padding-left: 15px;
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.request-page-form-wrap .section-title .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+.request-page-form .form-group textarea {
+    max-height: 160px;
+    resize: none;
+}
+
+.request-page-form .form-group .form-control {
+    border-radius: 0;
+    border: 1px solid #726c94;
+    padding: 15px 30px 15px 30px;
+    margin-bottom: 25px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.request-page-form .form-group .form-control::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request-page-form .form-group .form-control:-ms-input-placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request-page-form .form-group .form-control::-ms-input-placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request-page-form .form-group .form-control::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.request-page-form #f-type {
+    border-radius: 0;
+    border: 1px solid #726c94;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 25px;
+    height: 40px;
+    /* color: #fff; */
+    width: 100%;
+    background-color: transparent;
+}
+
+.request-page-form .submit-btn {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 19px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--secondary-color);
+}
+
+.request-page-form .submit-btn:hover {
+    background-color: var(--main-color-one);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+:root {
+    --main-color-one: #352d66;
+    --secondary-color: #fac033;
+    --heading-color: #352d66;
+    --paragraph-color: #333333;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
