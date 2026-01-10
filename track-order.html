@@ -42,9 +42,9 @@
             
             <p>Enter your shipment tracking number below to get real-time updates.</p>
 
-            <form method="POST" action="https://speedycargoshipment.com/trackingresult" class="tracking-id-form">
-                <input type="hidden" name="_token" value="zl6vPzzK54DCGWesbaE0ts8cTAYfflgfgUG3DB3y">                <input type="text" name="trackingnumber" placeholder="Enter Your Tracking Number" required="">
-                <button type="submit">Track Shipment</button>
+            <form onsubmit="track(); return false;" class="tracking-id-form">
+                <input type="text" id="track-input" name="trackingnumber" placeholder="Enter Your Tracking Number" required="">
+                <button type="submit" id="submit_wpcargo">Track Shipment</button>
             </form>
 
             <div class="shipping-steps">
@@ -223,7 +223,8 @@ function googleTranslateElementInit() {
 <script src="js/slick.js"></script> 
 <script src="js/masonry.min_3.js"></script> 
 <script src="js/scripts.js"></script>
-  <!-- end footer --> 
+<script src="data.js"></script>
+  <!-- end footer -->
 
     
  <!-- Smartsupp Live Chat script -->
