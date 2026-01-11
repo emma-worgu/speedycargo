@@ -32,6 +32,8 @@ function getData() {
       document.getElementById('pd').textContent = data.pickupDate;
       document.getElementById('pt').textContent = data.pickupTime;
       document.getElementById('comment').textContent = data.comment;
+
+      console.log(data.shipType);
   
       const hdBg = document.getElementById('result-status-header')
   

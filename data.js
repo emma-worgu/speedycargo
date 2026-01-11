@@ -1,6 +1,6 @@
 async function track() {
   try {
-    document.getElementById('submit_wpcargo').value = 'TRACKING...'
+    document.getElementById('submit_wpcargo').textContent = 'TRACKING...'
     const trackInput = document.getElementById('track-input').value;
 
     if (trackInput === '') {
@@ -38,7 +38,7 @@ async function track() {
     sessionStorage.setItem('doc', JSON.stringify(doc));
     document.location.href = '/trackingresult.html';
   } catch (error) {
-    document.getElementById('submit_wpcargo').value = 'TRACK RESULT'
+    document.getElementById('submit_wpcargo').textContent = 'TRACK RESULT'
     console.log(error);
   }
 };
