@@ -25,15 +25,15 @@ function getData() {
       document.getElementById('currDest').textContent = data.currDest;
       document.getElementById('shipment').textContent = data.shipType;
       document.getElementById('weight').textContent = `${data.wght}Kg`;
-      document.getElementById('pay').textContent = data.payMode;
+      // document.getElementById('pay').textContent = data.payMode;
       document.getElementById('edd').textContent = data.deliveryDate;
       document.getElementById('edd-display').textContent = data.deliveryDate;
-      document.getElementById('dt').textContent = data.departureTime;
+      // document.getElementById('dt').textContent = data.departureTime;
       document.getElementById('pd').textContent = data.pickupDate;
-      document.getElementById('pt').textContent = data.pickupTime;
+      // document.getElementById('pt').textContent = data.pickupTime;
       document.getElementById('comment').textContent = data.comment;
 
-      console.log(data.shipType);
+      console.log(document.getElementById('status'));
   
       const hdBg = document.getElementById('result-status-header')
   
