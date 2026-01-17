@@ -31,21 +31,28 @@ function getData() {
       // document.getElementById('dt').textContent = data.departureTime;
       document.getElementById('pd').textContent = data.pickupDate;
       // document.getElementById('pt').textContent = data.pickupTime;
-      document.getElementById('comment').textContent = data.comment;
+      // document.getElementById('comment').textContent = data.comment;
 
       console.log(document.getElementById('status'));
-  
-      const hdBg = document.getElementById('result-status-header')
-  
-      if (data.shipStatus === 'held') {
-        hdBg.style.backgroundColor = 'red'
-        hdBg.style.fontWeight = 900
-        return hdBg.textContent = 'ON HOLD';
+
+      // Update Google Maps location first
+      const mapIframe = document.getElementById('google-map-iframe');
+      if (mapIframe && data.currDest) {
+        mapIframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(data.currDest)}&output=embed`;
       }
-  
-      hdBg.style.backgroundColor = 'green'
-      hdBg.style.fontWeight = 900
-      return hdBg.textContent = 'IN TRANSIT';
+
+      const hdBg = document.getElementById('result-status-header')
+      if (hdBg) {
+        if (data.shipStatus === 'held') {
+          hdBg.style.backgroundColor = 'red'
+          hdBg.style.fontWeight = 900
+          hdBg.textContent = 'ON HOLD';
+        } else {
+          hdBg.style.backgroundColor = 'green'
+          hdBg.style.fontWeight = 900
+          hdBg.textContent = 'IN TRANSIT';
+        }
+      }
     } catch (error) {
       console.log(error);
     }
